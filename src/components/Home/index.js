@@ -82,6 +82,7 @@ class Home extends Component {
     const {score} = this.state
     const choice2 = choicesList[Math.floor(Math.random() * choicesList.length)]
     const choice1 = choicesList.filter(eachValue => eachValue.id === id)
+    console.log(choice1, choice2)
     const result = this.getResult(choice1[0], choice2)
     let newScore = score
     if (result === 'YOU WON') {
